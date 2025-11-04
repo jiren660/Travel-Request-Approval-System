@@ -1,0 +1,178 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 80px;
+      background-color: #800000;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      gap: 10px;
+      transition: width 0.3s ease;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .sidebar.expanded {
+      width: 220px;
+      align-items: flex-start;
+    }
+
+    .sidebar .icon {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 100%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .sidebar .icon:hover {
+      background-color: #a30000;
+    }
+
+    .sidebar img {
+      width: 35px;
+      filter: brightness(0) invert(1);
+    }
+
+    .sidebar .text {
+      opacity: 0;
+      white-space: nowrap;
+      transition: opacity 0.2s ease;
+    }
+
+    .sidebar.expanded .text {
+      opacity: 1;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: white;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #800000;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .profile-wrapper {
+      position: relative;
+    }
+
+    .profile-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .profile-icon img {
+      width: 30px;
+      height: 30px;
+      filter: invert(23%) sepia(96%) saturate(7489%) hue-rotate(350deg) brightness(80%) contrast(102%);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 45px;
+      right: 0;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px 0;
+      min-width: 120px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 100;
+    }
+
+    .dropdown-menu button {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 10px 20px;
+      color: #800000;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .dropdown-menu button:hover {
+      background-color: #f2f2f2;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: #800000;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .buttons button {
+      background-color: #800000;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 25px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: 600;
+    }
+
+    .buttons button:hover {
+      background-color: #a30000;
+    }

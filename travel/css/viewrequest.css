@@ -1,0 +1,94 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #5b0a0a; /* your maroon theme */
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow-y: auto;
+  background-color: #fff;
+  color: #333;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #5b0a0a;
+  font-weight: 600;
+}
+
+h2 {
+  color: #5b0a0a;
+  border-left: 4px solid #5b0a0a;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.grid p {
+  margin-bottom: 6px;
+}
+
+.bg-green-600 {
+  background-color: #22c55e !important;
+}
+
+.bg-red-600 {
+  background-color: #dc2626 !important;
+}
+
+.bg-yellow-600 {
+  background-color: #eab308 !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #e6e6e6;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #5b0a0a;
+  color: white;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+tbody tr:hover {
+  background-color: #fff5f5;
+}
+
+tbody tr.font-semibold {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+a.text-maroon {
+  display: inline-block;
+  margin-top: 20px;
+  color: #5b0a0a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a.text-maroon:hover {
+  color: #7a0000;
+  text-decoration: underline;
+}
