@@ -1,0 +1,174 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+/* fix top header alignment */
+header {
+  background-color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top:25px;
+  color: #800000;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+
+.sidebar {
+  background-color: #800000;
+  color: white !important;
+}
+
+.sidebar a,
+.sidebar span {
+  color: white !important;
+}
+
+.sidebar .icon:hover {
+  background-color: #a30000;
+}
+
+/* form container */
+.form-container {
+  background: #ffffff;
+  padding: 20px 45px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #4a0a0a;
+  text-align: left; /* aligns all form labels and inputs to the left */
+}
+
+/* section layout */
+form {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  min-width: 350px;
+}
+
+/* form title */
+h1 {
+  text-align: left; /* changed from center */
+  color: #5b0a0a;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* labels and inputs */
+label {
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+span {
+  color: red;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fffaf9;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+/* expenses */
+.expense-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #a30000;
+}
+
+.total {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+  color: #333;
+}
+
+#total-cost {
+  color: #800000;
+  font-weight: bold;
+}
+
+/* submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #800000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #a30000;
+}
+
+/* layout spacing */
+.content {
+  background: linear-gradient(to bottom right, #fff8f8, #f8f8f8);
+  min-height: calc(100vh - 75px);
+  padding: 40px 0 60px;
+}
